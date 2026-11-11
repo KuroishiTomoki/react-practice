@@ -5,11 +5,8 @@ import { InlineStyle } from './components/InlineStyle';
 import { CssModule } from './components/CssModule';
 import { StyleJsx } from './components/StyleJsx';
 import { StyledComponent } from './components/StyledComponent';
-//import { Emotion } from './components/Emotion';
-import { Home } from './Home';
-import { Page1 } from './Page1';
-import { Page2 } from './Page2';
-import { BrowserRouter, Link, Routes, Route} from "react-router"
+import { BrowserRouter, Link } from "react-router"
+import { Router } from './router/Router';
 
 function App() {
 
@@ -30,19 +27,14 @@ function App() {
 
   return(
     <>
-    <BrowserRouter>
-      <Link to="/">Home</Link>
-      <Link to="/page1">Page1</Link>
-      <Link to="/page2">Page2</Link>
+      <BrowserRouter>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/page1" element={<Page1 />} />
-        <Route path="/page2" element={<Page2 />} />
-      </Routes>
+        <Link to="/">Home</Link>
+        <Link to="/page1">Page1</Link>
+        <Link to="/page2">Page2</Link>  
+        <Router />     
+
       </BrowserRouter>
-
-      
       <input value={text} onChange={onChangeText} />
       <button onClick={onClickOpen}>表示</button>
 
