@@ -5,11 +5,11 @@ import { UrlParameter } from "../UrlParameter";
 
 export const Page2Router = [
     {
-        path:"/",
+        path:"/page2",
         Children:<Page2/>
     },
     {
-        path:"/:id",
+        path:"/page2/:id",
         Children:<UrlParameter/>
     }
 

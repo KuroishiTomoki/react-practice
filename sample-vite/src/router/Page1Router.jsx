@@ -8,7 +8,7 @@ export const Page1Router = [
         Children:<Page1/>
     },
     {
-        path:"/:id",
+        path:"/page1/:id",
         Children:<UrlParameter/>
     }
 ]
