@@ -1,7 +1,6 @@
 
 import { Page1 } from "../Page1";
-import { Page1DetailA } from "../Page1DetailA";
-import { Page1DetailB } from "../Page1DetailB";
+import { UrlParameter } from "../UrlParameter";
 
 export const Page1Router = [
     {
@@ -9,12 +8,7 @@ export const Page1Router = [
         Children:<Page1/>
     },
     {
-        path:"/page1/detailA",
-        Children:<Page1DetailA/>
-    },
-    {
-        path:"/page1/detailB",
-        Children:<Page1DetailB/>
-    },
-
+        path:"/:id",
+        Children:<UrlParameter/>
+    }
 ]

@@ -2,6 +2,7 @@ import { Routes, Route} from "react-router"
 import { Home } from "../Home"
 import { Page2 } from "../Page2"
 import { Page1Router } from "./Page1Router"
+import { Page2Router } from "./Page2Router"
 
 
 export const Router = () => {
@@ -10,6 +11,12 @@ export const Router = () => {
             <Route path="/" element={<Home />}></Route>
 
             {Page1Router.map((route) => {
+                return(
+                    <Route key={route.path} path={route.path} element={route.Children}></Route>
+                )
+            })}
+
+            {Page2Router.map((route) => {
                 return(
                     <Route key={route.path} path={route.path} element={route.Children}></Route>
                 )

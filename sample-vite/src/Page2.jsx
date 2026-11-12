@@ -1,9 +1,12 @@
+import { Link } from "react-router"
+
 export const Page2 = () => {
 
 
     return(
         <div>
             <h1>Page2</h1>
+            <Link to="/page2/100">Url Parameter</Link>
         </div>
     )
 }
