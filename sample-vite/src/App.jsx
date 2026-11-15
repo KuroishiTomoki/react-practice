@@ -7,6 +7,9 @@ import { StyleJsx } from './components/StyleJsx';
 import { StyledComponent } from './components/StyledComponent';
 import { BrowserRouter, Link } from "react-router"
 import { Router } from './router/Router';
+import { PrimaryButton } from './components/atom/button/PrimaryButton';
+import { SecondaryButton } from './components/atom/button/SecondaryButton';
+import { SearchInput } from './components/molcule/SearchInput';
 
 function App() {
 
@@ -27,6 +30,13 @@ function App() {
 
   return(
     <>
+      { /*アトミックデザイン */}
+      <SearchInput></SearchInput>
+      <PrimaryButton>Primary1</PrimaryButton>
+      <SecondaryButton>Primary2</SecondaryButton>
+
+
+      {/* Routeの学習 */}
       <BrowserRouter>
 
         <Link to="/">Home</Link>
