@@ -1,4 +1,4 @@
-import { Routes, Route} from "react-router"
+import { Routes, Route, BrowserRouter} from "react-router"
 import { Home } from "../Home"
 import { Page2 } from "../Page2"
 import { Page1Router } from "./Page1Router"
