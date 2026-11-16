@@ -3,11 +3,11 @@ import { BaseButton } from "./BaseButton";
 
 export const SecondaryButton = (props) =>{
 
-    const { children } = props;
+    const { children, onClick } = props;
 
     return (
         <>
-            <SButton>{children}</SButton>
+            <SButton onClick={onClick}>{children}</SButton>
         </>
     )
 

@@ -1,9 +1,11 @@
 import styled from "styled-components"
 import { SearchInput } from "../molcule/SearchInput"
 import { UserCard } from "../organism/user/UserCard"
+import { useLocation } from "react-router"
 
 
 export const Users = () => {
+
     const users = [...Array(10)].map((val) => {
         return(
             {
